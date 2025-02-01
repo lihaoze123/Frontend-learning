@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+import "@/app/ui/global.css";
+import { inter } from "@/app/ui/fonts";
+
+=======
+>>>>>>> 18b40b1 (feat: initialize Next.js dashboard application with core functionality)
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+<<<<<<< HEAD
+      <body className={`${inter.className} antialiased`}>{children}</body>
+=======
+      <body>{children}</body>
+>>>>>>> 18b40b1 (feat: initialize Next.js dashboard application with core functionality)
+    </html>
+  );
+}
