@@ -29,7 +29,6 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-<<<<<<< HEAD
           <Image
             src="/hero-desktop.png"
             width={1000}
@@ -44,9 +43,6 @@ export default function Page() {
             className="block md:hidden"
             alt="Screenshots of the dashboard project showing mobile version"
           />
-=======
-          {/* Add Hero Images Here */}
->>>>>>> 18b40b1 (feat: initialize Next.js dashboard application with core functionality)
         </div>
       </div>
     </main>
