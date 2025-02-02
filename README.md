@@ -1,4 +1,11 @@
+<div align="center">
+  <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="80">
+</div>
+
 # Frontend-learning
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 
 这是一个前端学习项目，用于记录和实践前端开发技术。
 
@@ -26,6 +33,7 @@ Frontend-learning/
 ### React Foundations
 
 基础的 React 学习项目，包含:
+
 - React 基础概念
 - 组件开发
 - Props 和 State
@@ -34,6 +42,7 @@ Frontend-learning/
 ### Next.js Dashboard
 
 完整的 Next.js 仪表盘应用，包含:
+
 - Next.js 13+ App Router
 - TypeScript 集成
 - Tailwind CSS 样式
