@@ -33,7 +33,6 @@ Frontend-learning/
 ### React Foundations
 
 基础的 React 学习项目，包含:
-
 - React 基础概念
 - 组件开发
 - Props 和 State
@@ -42,7 +41,6 @@ Frontend-learning/
 ### Next.js Dashboard
 
 完整的 Next.js 仪表盘应用，包含:
-
 - Next.js 13+ App Router
 - TypeScript 集成
 - Tailwind CSS 样式
