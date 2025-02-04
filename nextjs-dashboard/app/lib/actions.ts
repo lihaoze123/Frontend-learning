@@ -4,6 +4,7 @@ import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import postgres from "postgres";
+import { fetchInvoiceById } from "@/app/lib/data";
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
@@ -58,5 +59,15 @@ export async function updateInvoice(id: string, formData: FormData) {
 
 export async function deleteInvoice(id: string) {
   await sql`DELETE FROM invoices WHERE id = ${id}`;
+  revalidatePath("/dashboard/invoices");
+}
+
+export async function copyInvoice(id: string) {
+  await sql`
+      INSERT INTO invoices (customer_id, amount, status, date)
+      SELECT customer_id, amount, status, date
+      FROM invoices
+      WHERE id = ${id}
+  `;
   revalidatePath("/dashboard/invoices");
 }
