@@ -1,6 +1,15 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
+import { Metadata } from 'next';
 
 export const experimental_ppr = true;
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme 仪表盘',
+    default: 'Acme 仪表盘',
+  },
+  description: 'Acme 仪表盘管理系统 - 查看和管理您的业务数据',
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
